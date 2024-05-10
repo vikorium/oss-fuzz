@@ -42,7 +42,7 @@ jobs:
           GITHUBTOKEN: ${{secrets.GITHUB_TOKEN}}
           PRAUTHOR: ${{ github.event.pull_request.user.login }}
           PRNUMBER: ${{ github.event.pull_request.number }} 
-        run: python infra/pr_helper.py
+        run: python -m trace --trace infra/pr_helper.py
 
       - name: Leave comments
         if: env.IS_INTERNAL == 'FALSE'
