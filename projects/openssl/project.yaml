@@ -11,10 +11,9 @@ auto_ccs:
  - "nhorman@openssl.org"
  - "tjh@openssl.org"
  - "tjh@cryptsoft.com"
+ - "jiatan@gmail.com"
 sanitizers:
  - address
- - memory:
-    experimental: True
  - undefined
 architectures:
   - x86_64
@@ -23,4 +22,3 @@ main_repo: 'https://github.com/openssl/openssl.git'
 fuzzing_engines:
  - afl
  - honggfuzz
- - libfuzzer
